@@ -1,0 +1,211 @@
+/* Общие стили для страницы */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFE4B5; 
+}
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    left: 125px;
+    right: 10px;
+    bottom: 500px;
+}
+p {
+    line-height: 1.5;
+}
+
+h1 {
+    text-align: center;
+}
+/* Основной контейнер плеера */
+.audio-player {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
+  padding: 10px;
+  border-radius: 5px;
+  position: relative;
+  bottom: 300px;
+}
+
+/* Кнопка воспроизведения/паузы */
+.play-pause-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 10px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* Полоса прогресса воспроизведения */
+.progress-bar {
+  width: 200px;
+  height: 8px;
+  background-color: #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+/* Заполненная часть полосы прогресса */
+.progress {
+  height: 100%;
+  background-color: #007bff;
+  border-radius: 5px;
+}
+
+/* Информация об аудиофайле */
+.audio-info {
+  font-size: 14px;
+}
+/* Стили для каждого раздела */
+
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.gallery-item {
+    flex: 1 0 300px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.1);
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.quote {
+  position: relative;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  color: #333;
+  text-align: left;
+  margin: 20px;
+  padding: 10px 20px;
+  border-left: 5px solid #333;
+  background-color: #f9f9f9;
+  animation: fadeIn 1s ease-in-out;
+  bottom: 250px;
+}
+
+.quote:before {
+  content: open-quote;
+  position: absolute;
+  top: -15px;
+  left: -20px;
+  font-size: 3em;
+  color: #999;
+}
+
+.quote:after {
+  content: close-quote;
+  position: absolute;
+  bottom: -15px;
+  right: -20px;
+  font-size: 3em;
+  color: #999;
+}
+
+
+#feedback {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+#feedback h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#feedback form {
+    display: flex;
+    flex-direction: column;
+}
+
+#feedback label {
+    font-weight: bold;
+}
+
+#feedback input,
+#feedback textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#feedback input[type="submit"] {
+    background-color: #333;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+#feedback input[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Дополнительные стили */
+
+.row {
+    text-align: center;
+    padding: 20px;
+    background-color: #FFA500;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+.Stanly{
+    position: relative;
+  top: 150px;
+  left: 20px;
+  bottom: 150px;
+  border: inset; 
+  border-width:20px;
+  border-color: #FFA500;
+}
+.low{
+    position: relative;
+    bottom: 100px;
+    text-align: center;
+}
+.rot{
+     font-family: Arial, sans-serif;
+    background-color: #333;
+    color: white; 
+}
